@@ -13,7 +13,6 @@ class Solution(object):
         i = 0
         j = 0
 
-        # Merge two sorted arrays
         while i < len(left) and j < len(right):
 
             if left[i] <= right[j]:
@@ -23,12 +22,11 @@ class Solution(object):
                 result.append(right[j])
                 j += 1
 
-        # Remaining elements from left
+       
         while i < len(left):
             result.append(left[i])
             i += 1
 
-        # Remaining elements from right
         while j < len(right):
             result.append(right[j])
             j += 1
