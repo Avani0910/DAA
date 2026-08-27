@@ -6,7 +6,6 @@ class Solution(object):
         for i in range(len(nums)):
             if nums[i] != val:
                 nums[count] = nums[i]
-                #res.append(i)
                 count+=1
         return count
        
